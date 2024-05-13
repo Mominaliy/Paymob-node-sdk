@@ -20,7 +20,7 @@ npm install paymob-node-sdk
 Import and initialize the Paymob client
 
 ```javascript
-const { Paymob } = require('paymob')
+const { Paymob } = require('paymob-node-sdk')
 
 const paymob = new Paymob({
     apiKey:'Your API Key',
