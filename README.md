@@ -1,21 +1,21 @@
 # Paymob NodeJS SDK
 nodejs library for (Paymob)[https://pakistan.paymob.com/portal2/en/login]
 
-##Installation
+## Installation
 
-###With Yarn
+### With Yarn
 
 ```
 yarn add paymob-node-sdk
 ```
 
-###With NPM
+### With NPM
 
 ```
 npm install paymob-node-sdk
 ```
 
-##Usage
+## Usage
 
 Import and initialize the Paymob client
 
@@ -28,7 +28,7 @@ const paymob = new Paymob({
     iframeId:123456
 })
 ```
-###Initialization
+### Initialization
 
 | Parameter |  Type  |               Description                     | Required |
 | --------- | ------ | --------------------------------------------- | -------- |
@@ -36,13 +36,13 @@ const paymob = new Paymob({
 | `region`  | String | `pakistan`, `accept`, `uae`, `oman`, `ksa`    |    Yes   |
 | `iframeId`| Number | IFrame Id from your Paymob Dashboard Iframes. |    Yes   |
 
-###Get Token
+### Get Token
 
 ```javascript
 const token = await paymob.getToken()
 ```
 
-###Create Payment
+### Create Payment
 
 ```javascript
 
@@ -64,7 +64,7 @@ const billingData = {
 
 const payment = await paymob.processPayment(token, billingData, amount,currency, integrationid);
 ```
-####Parameters for Create Payment
+#### Parameters for Create Payment
 
 |    Parameter   |  Type  |                              Description                          | Required |
 | -------------- | ------ | ----------------------------------------------------------------- | -------- |
@@ -76,14 +76,14 @@ const payment = await paymob.processPayment(token, billingData, amount,currency,
 
 The `payment` object returned by `processPayment` contains a `URL` and `Payment Keys`. URL can be used to redirect user to that URL. Payment Keys can be used in Iframe.
 
-###Get Transaction Details
+### Get Transaction Details
 
 ```javascript
 const transactionDetails = await paymob.getTransactionDetails(token, transactionId)
 
 ```
 
-####Parameters for Transaction Details
+#### Parameters for Transaction Details
 
 |    Parameter     |  Type  |                          Description                  | Required |
 | ---------------- | ------ | ----------------------------------------------------- | -------- |
