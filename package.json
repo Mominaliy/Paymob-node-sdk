@@ -1,0 +1,28 @@
+{
+  "name": "paymob-node-sdk",
+  "version": "1.0.0",
+  "description": "Paymob node.js client sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mominaliy/Paymob-node-sdk.git"
+  },
+  "keywords": [
+    "paymob",
+    "paymob-sdk",
+    "paymob-integration"
+  ],
+  "author": "Momin Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mominaliy/Paymob-node-sdk/issues"
+  },
+  "homepage": "https://github.com/Mominaliy/Paymob-node-sdk#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "uuid": "^9.0.1"
+  }
+}
