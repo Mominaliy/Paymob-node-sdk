@@ -1,6 +1,7 @@
-const Paymob = require('../index')
+const Paymob = require('paymob-node-sdk')
 
 async function main() {
+   console.log(Paymob)
     const apiKey = 'Your API Key'
     const paymob = new Paymob(apiKey, 'pakistan', 'Your Iframe')
      try{
